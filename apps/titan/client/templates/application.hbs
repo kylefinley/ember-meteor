@@ -1,0 +1,66 @@
+<!-- Wrapper -->
+<div id="wrap">
+
+  <!-- Top -->
+  <div class="top">
+    <div class="row">
+      <div class="large-12 columns">
+        <h1 class="logo">
+          {{#link-to "home"}}Titan{{/link-to}}
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar contain-to-grid">
+
+    <nav class="top-bar">
+
+      <!-- Logo -->
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+      </ul>
+
+      <!-- Nav items -->
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          {{#link-to "home" tagName="li"}}{{#link-to "home"}}Home{{/link-to}}{{/link-to}}
+          {{#link-to "posts" tagName="li"}}{{#link-to "posts"}}Blog{{/link-to}}{{/link-to}}
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+        </ul>
+
+      </section>
+
+    </nav>
+    <!-- End Top Bar -->
+
+  </div>
+
+  <!-- Notifictaions -->
+  <div class="row">
+  </div>
+
+  <!-- Page Contents -->
+  {{outlet}}
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row footer-inner">
+        <div class="large-6 columns">
+          <p>&copy; 2013 MeteorBelt.com. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+

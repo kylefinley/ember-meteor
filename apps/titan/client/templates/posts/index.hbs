@@ -1,0 +1,10 @@
+<ul id="post-llst">
+  {{#each post in model}}
+    <li>
+      <h2>{{#link-to 'posts.show' post}}{{post.title}}{{/link-to}}</h2>
+      <h5>{{formatDate post.publishedAt format="MMMM Do, YYYY"}}</h5>
+      {{{post.body}}}
+    </li>
+  {{/each}}
+</ul>
+

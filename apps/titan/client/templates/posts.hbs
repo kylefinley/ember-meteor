@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="large-9 columns">
+    {{outlet}}
+  </div>
+  <div class="large-3 columns">
+    <div>
+      <h4>Tags</h4>
+      {{#each tag in tags}}
+        <a class="btn btn-small" href="/blog/tags/slug">{{tag.name}}</a>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
